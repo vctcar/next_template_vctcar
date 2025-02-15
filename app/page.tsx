@@ -9,16 +9,14 @@ import outputs from "@/amplify_outputs.json";
 
 Amplify.configure(outputs);
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Page() {
   return (
     <html lang="en">
       <body>      
         <Authenticator>
-          {children}
+          <div>
+            {/* Your page content goes here */}
+          </div>
         </Authenticator>
       </body>
     </html>
